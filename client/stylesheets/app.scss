@@ -1,0 +1,78 @@
+$loading-font-size: 22px;
+
+@import '.meteor/local/build/programs/server/assets/packages/meteoric_ionic-sass/ionic';
+@import '.meteor/local/build/programs/server/assets/packages/meteoric_ionicons-sass/ionicons';
+
+.content.overflow-scroll {
+bottom: 0px !important;
+}
+.title {
+  text-align:center;
+}
+::-webkit-scrollbar {
+	display:block;
+    -webkit-appearance: none;
+    width: 20px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+.load-more {
+    display: block;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.05);
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 10px;
+}
+.load-more:hover {
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.1);
+}
+.card{
+	background-color: #eee;
+}
+.alimento{
+	margin-bottom: 10px; 	
+}
+.dieta{
+  padding: 5px;
+  padding-bottom: 50px;
+  width: 100%;
+  min-height: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  background: #f7f7f7;
+  text-align: center;
+} 
+.tab{
+  padding: 5px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+  background: #f7f7f7;
+  text-align: center;
+    margin-bottom: 10px;  
+ }
+.tab-sel{
+  padding: 5px;
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+  background : rgba(0, 0, 0, 0.05);
+  text-align: center;
+  margin-bottom: 10px;  
+ } 
+ 
+ .ativo{
+	display: block;
+ }
+ .escondido{
+	display: none;
+ }
+
+ 

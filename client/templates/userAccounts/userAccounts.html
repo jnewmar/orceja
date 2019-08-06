@@ -1,0 +1,45 @@
+<template name="userAccounts">
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title"  style="text-align:center;">OrceJá</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+      {{#if currentUser}}
+        <div class="padding">
+          <button class="button button-positive button-block" data-action="logout">Log Out</button>
+        </div>
+      {{else}}        
+        <div class="list at-form">          
+          <div class="item item-divider">
+            <h3 class="title">Entrar</h3>
+          </div>
+          <div class="at-pwd-form">
+            <form role="form" id="at-pwd-form" novalidate="" action="#" method="POST">
+            <div class="at-input item item-input item-text-wrap item-stacked-label">            
+              <label class="input-label" for="at-field-email">
+                Email 
+              </label>
+              <input type="email" id="at-field-email" name="at-field-email" placeholder="Email" autocapitalize="none" autocorrect="off">       
+            </div>
+            <div class="at-input item item-input item-text-wrap item-stacked-label">            
+              <label class="input-label" for="at-field-password">
+                Senha 
+              </label>
+              <input type="password" id="at-field-password" name="at-field-password" placeholder="Senha" autocapitalize="none" autocorrect="off">
+            </div>
+            <div class="padding">
+              <button class="at-btn button button-positive button-block " id="login-buttons-password">Entrar</button>
+            </div>
+          </form>
+          </div>
+          <div class="padding text-center">
+            <a  href="/criarComprador" class="button button-calm button-block" id="criar-cliente">Registrar como Comprador</a>
+            <a  href="/criarFornecedor" class="button button-calm button-block" id="criar-fornecedor">Registrar como Fornecedor</a>
+          </div>         
+        </div>
+      {{/if}}
+    {{/ionContent}}
+  {{/ionView}}
+</template>

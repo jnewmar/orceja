@@ -1,0 +1,102 @@
+<template name="verOrcamento">
+	{{#contentFor "headerTitle"}}
+		<h1 class="title"  style="text-align:center;">Orçamento</h1>		
+	{{/contentFor}}
+   {{#contentFor "headerButtonRight"}}
+   		<a href="/" class="button button-clear icon ion-navicon"></a> 
+  	{{/contentFor}}
+	{{#contentFor "headerButtonLeft"}}
+	    {{>ionNavBackButton }}
+  {{/contentFor}} 
+        
+ 
+	{{#ionView}}
+		{{#ionContent}}  
+		{{#with orc}}
+<div class="list card">
+
+			{{#if isInRole 'fornecedor'}}	
+				  <div class="item item-divider">
+				    Solicitação
+				  </div>
+
+				  <div class="item" style="overflow: initial;    white-space: initial;">
+				        <b>Nome Solicitante</b>:<br> {{ solicitante.profile.name}}
+				  </div>
+					<div class="item" style="overflow: initial;    white-space: initial;">
+				        <b>Email Solicitante</b>:<br> {{ solicitante.email }}
+				  </div>
+					<div class="item" style="overflow: initial;    white-space: initial;">
+				        <b>Telefone Solicitante</b>:<br> {{ solicitante.profile.telefone }}
+				  </div>				  
+					<div class="item" style="overflow: initial;    white-space: initial;">
+				        <b>Endereço Solicitante</b>:<br>{{ solicitante.profile.endereco}}
+				  </div>  
+				  <div class="item">
+				        <b>Data Solicitação </b>:{{ formatTime data_solicitacao }}
+				  </div>  
+				  <div class="item">
+				        <b>Data Orçamento</b>: {{ formatTime data_cadastro }}
+				  </div>
+
+			{{/if}}
+
+			{{#if isInRole 'comprador'}}	
+				  <div class="item item-divider">
+				    Orçamento
+				  </div>
+
+				  <div class="item" style="overflow: initial;    white-space: initial;">
+				        <b>Nome Fornecedor</b>:<br> {{ fornecedor.profile.name}}
+				  </div>
+					<div class="item" style="overflow: initial;    white-space: initial;"> 
+				        <b>Email Fornecedor</b>: <br>{{ fornecedor.email }}
+				  </div>
+					<div class="item" style="overflow: initial;    white-space: initial;">
+				        <b>Telefone Fornecedor</b>:<br> {{ fornecedor.profile.telefone }}
+				  </div>				  
+					<div class="item" style="overflow: initial;    white-space: initial;">
+				        <b>Endereço Fornecedor</b>:<br>{{ fornecedor.profile.endereco}}
+				  </div>  
+				  <div class="item">
+				        <b>Data Solicitação </b>:{{ formatTime data_solicitacao }}
+				  </div>  
+				  <div class="item">
+				        <b>Data Orçamento</b>: {{ formatTime data_cadastro }}
+				  </div>
+
+			{{/if}}	
+			</div>
+			{{#ionList}}
+			{{#ionItem}}				
+			<div class="row">
+			  <div class="col col-50"><b>Produto</b></div>
+			  <div class="col" ><b>Valor<br>unitário</b></div>
+			  <div class="col" ><b>Total</b></div>
+			</div>
+			{{/ionItem}}
+			
+			{{#each itens}}
+				{{#ionItem class="item-input"}}
+				<div class="row ">
+		
+					<div class="col col-50">{{quantidade}} {{unidade}} {{alimento}}</div>
+					<div class="col" >{{ formatMoney valor_unitario}}</div>
+					<div class="col total" id="total_{{_id}}" name="total_{{_id}}" >{{ formatMoney valor_total}}</div>
+				</div>				
+				{{/ionItem}}
+			{{/each}}
+			{{#ionItem}}	
+			<div class="row">
+			  <div class="col col-50"><b>Total</b></div>
+			  <div class="col" ></div>
+			  <div class="col" id="total_total" ><b>{{ formatMoney total }}</b></div>
+			</div>
+			{{/ionItem}}
+			
+
+			 {{/ionList}}
+			 {{/with}}
+  		{{/ionContent}}
+	{{/ionView}}
+</template>

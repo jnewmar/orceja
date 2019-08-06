@@ -1,0 +1,36 @@
+<template name="solicitacoes">
+	{{#contentFor "headerTitle"}}
+		<h1 class="title"  style="text-align:center;">Solicitações</h1>		
+	{{/contentFor}}
+    {{#contentFor "headerButtonLeft"}}
+   		<a href="/" class="button button-clear icon ion-navicon"></a> 
+  	{{/contentFor}}
+	        
+ 
+	{{#ionView}}
+		{{#ionContent}}  
+			{{#ionList}}			
+			{{#each lista}}
+				{{#ionItem class="item-avatar item-button-right " style="overflow: initial;    white-space: initial;"}}
+				<h2>{{ solicitante.profile.name }}</h2>
+				<p>{{ formatTime data_cadastro }}</p>
+				{{#if isPhone}}
+					{{#if respondido }}
+					<a href="/verOrcamento/{{orcamento._id}}" class="button button-small  button-calm icon ion-document-text" >&nbsp;Ver</a>
+					{{else}}
+					<a href="/fazerOrcamento/{{_id}}" class="button button-small  button-positive icon ion-cash " >&nbsp;Orcejá</a>
+					{{/if}}
+				{{else}}
+					{{#if respondido }}
+					<a href="/verOrcamento/{{orcamento._id}}" class="button button-small  button-calm" >&nbsp;Ver Orçamento</a>
+					{{else}}
+					<a href="/fazerOrcamento/{{_id}}" class="button button-small  button-positive " >&nbsp;Orcejá</a>
+					{{/if}}
+					
+				{{/if}}
+				{{/ionItem}}
+			{{/each}}
+			{{/ionList}}
+  		{{/ionContent}}
+	{{/ionView}}
+</template>

@@ -1,0 +1,526 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"e",
+				"email"
+			],
+			[
+				"data",
+				"data_cadastro"
+			],
+			[
+				"valor",
+				"valor_unitario"
+			],
+			[
+				"user",
+				"userId"
+			],
+			[
+				"find",
+				"findOne"
+			],
+			[
+				"solic",
+				"solicOrcamento"
+			],
+			[
+				"var",
+				"var_export"
+			],
+			[
+				"var_",
+				"var_dump"
+			],
+			[
+				"un",
+				"unserialize"
+			],
+			[
+				"meta",
+				"meta_value"
+			],
+			[
+				"wr",
+				"write_log"
+			],
+			[
+				"pos",
+				"post_object"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 81.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Snippet: ",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"",
+				"Indentation: Convert to Tabs"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 58.0,
+		"history":
+		[
+			"ls",
+			"pwd"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/william/Projetos/orceja/client/templates/application/fazerOrcamento.html",
+		"/home/william/Projetos/orceja/server/fixture.js",
+		"/home/william/Projetos/orceja/client/templates/application/solicitarOrcamento.html",
+		"/home/william/Projetos/orceja/client/templates/application/solicitacoes.html",
+		"/home/william/Projetos/orceja/client/templates/application/verOrcamentos.html",
+		"/home/william/Projetos/orceja/client/templates/userAccounts/userAccounts.html",
+		"/home/william/Projetos/nutri/client/templates/application/criaDieta.html",
+		"/home/william/Projetos/orceja/client/stylesheets/app.scss",
+		"/home/william/Projetos/orceja/client/templates/application/verOrcamento.html",
+		"/home/william/Projetos/nutri/client/templates/application/dieta.html",
+		"/home/william/Projetos/orceja/client/templates/application/profile.html",
+		"/home/william/Projetos/orceja/client/templates/includes/access_denied.html",
+		"/home/william/Projetos/orceja/client/templates/application/verItensSolic.html",
+		"/home/william/Projetos/orceja/client/templates/application/usuarios.html",
+		"/home/william/Projetos/orceja/client/templates/application/pacientes.html",
+		"/home/william/Projetos/orceja/client/templates/application/pacienteNovo.html",
+		"/home/william/Projetos/orceja/client/templates/application/nutricionistas.html",
+		"/home/william/Projetos/orceja/client/templates/application/nutricionistaNovo.html",
+		"/home/william/Projetos/orceja/client/templates/application/minhasSolicitacoes.html",
+		"/home/william/Projetos/orceja/client/templates/application/home.html",
+		"/home/william/Projetos/orceja/client/templates/application/dieta.html",
+		"/home/william/Projetos/orceja/client/templates/application/criarFornecedor.html",
+		"/home/william/Projetos/orceja/client/templates/application/alimentos.html",
+		"/home/william/Projetos/orceja/mobile-config.js",
+		"/home/william/Projetos/orceja/client/templates/application/criarComprador.html",
+		"/home/william/Projetos/nutri/client/templates/application/layout.html",
+		"/home/william/Projetos/orceja/client/templates/application/layout.html",
+		"/home/william/Projetos/nutri/client/templates/application/profile.html",
+		"/home/william/Projetos/orceja/server/globals.js",
+		"/home/william/Projetos/nutri/client/main.html",
+		"/home/william/Projetos/orceja/lib/router.js",
+		"/home/william/Projetos/orceja/server/publications.js",
+		"/home/william/Projetos/nutri/client/stylesheets/app.scss",
+		"/home/william/Projetos/nutri/mobile-config.js",
+		"/home/william/Projetos/nutri/lib/router.js",
+		"/home/william/Projetos/orceja/client/templates/application/criarFornecedor.js",
+		"/home/william/Projetos/orceja/client/templates/application/criarComprador.js",
+		"/home/william/Projetos/orceja/client/templates/application/solicitarOrcamento.js",
+		"/home/william/Projetos/powerfesta/lib/orcamento.js",
+		"/home/william/Projetos/orceja/server/email.js",
+		"/home/william/Projetos/orceja/client/templates/application/fazerOrcamento.js",
+		"/home/william/Projetos/orceja/client/templates/application/minhasSolicitacoes.js",
+		"/home/william/Projetos/powerfesta/client/application/lista_fornecedores.js",
+		"/home/william/Projetos/orceja/client/templates/application/verOrcamento.js",
+		"/home/william/Projetos/powerfesta/client/application/cad_solic.js",
+		"/home/william/Projetos/powerfesta/server/publications.js",
+		"/home/william/Projetos/orceja/client/templates/application/verOrcamentos.js",
+		"/home/william/Projetos/orceja/client/templates/application/solicitacoes.js",
+		"/home/william/Projetos/orceja/client/global.js",
+		"/home/william/Projetos/powerfesta/client/application/cad_fornecedor.js",
+		"/home/william/Projetos/powerfesta/client/application/ver_solic.js",
+		"/home/william/Projetos/powerfesta/client/application/lista_solic.js",
+		"/home/william/Projetos/powerfesta/client/application/lista_solic_recebidas.html",
+		"/home/william/Projetos/powerfesta/client/application/lista_solic_recebidas.js",
+		"/home/william/Projetos/orceja/client/templates/application/verItensSolic.js",
+		"/home/william/Projetos/orceja/client/templates/userAccounts/accountsConfig.js",
+		"/home/william/Projetos/orceja/lib/collections/alimentos.js",
+		"/home/william/Projetos/orceja/client/templates/userAccounts/userAccounts.js",
+		"/home/william/Projetos/orceja/client/templates/includes/header.html",
+		"/home/william/Projetos/orceja/client/templates/application/pacientes.js",
+		"/home/william/Projetos/orceja/lib/collections/users.js",
+		"/home/william/Projetos/powerfesta/lib/user.js",
+		"/home/william/Projetos/powerfesta/client/application/ver_orcamento_cliente.html",
+		"/home/william/Projetos/powerfesta/client/application/orcamento.js",
+		"/home/william/Projetos/powerfesta/client/application/ver_orcamento_cliente.js",
+		"/home/william/Projetos/nutri/client/templates/application/criaDieta.js",
+		"/home/william/Projetos/powerfesta/client/application/login.js",
+		"/home/william/Projetos/powerfesta/client/application/login.html",
+		"/home/william/Projetos/powerfesta/client/application/header.js",
+		"/home/william/Projetos/powerfesta/client/application/header.html",
+		"/home/william/Projetos/nutri/client/templates/application/nutricionistas.js",
+		"/home/william/Projetos/powerfesta/client/application/lista_orcamentos.js",
+		"/home/william/Projetos/powerfesta/client/application/lista_fornecedores.html",
+		"/home/william/Projetos/powerfesta/lib/router.js",
+		"/home/william/Projetos/powerfesta/client/application/dashboard.html",
+		"/home/william/Projetos/powerfesta/client/application/dashboard.js",
+		"/home/william/Projetos/powerfesta/client/global.js",
+		"/home/william/Projetos/powerfesta/server/globals.js",
+		"/home/william/Projetos/powerfesta/client/application/cad_solic.html",
+		"/home/william/Projetos/powerfesta/client/include/access_denied.html",
+		"/home/william/Projetos/powerfesta/client/application/cad_usuario.html",
+		"/home/william/Projetos/powerfesta/client/application/ver_solic.html",
+		"/home/william/Projetos/powerfesta/server/email.js",
+		"/home/william/Projetos/powerfesta/client/login.html",
+		"/home/william/Projetos/powerfesta/client/application/lista_orcamentos_cliente.html",
+		"/home/william/Projetos/powerfesta/client/application/ver_orcamento.js",
+		"/home/william/Projetos/powerfesta/client/application/cad_fornecedor.html",
+		"/home/william/Projetos/powerfesta/client/application/home.js",
+		"/home/william/Projetos/powerfesta/client/application/home.html",
+		"/home/william/Projetos/powerfesta/client/application/cad_usuario.js",
+		"/home/william/Projetos/powerfesta/client/include/login.html",
+		"/home/william/Projetos/powerfesta/client/include/loading.html",
+		"/home/william/Projetos/powerfesta/client/application/fornecedor_cadastrado.html",
+		"/home/william/Projetos/powerfesta/lib/email.js",
+		"/home/william/Projetos/powerfesta/public/googlef46743b4f2519077.html",
+		"/home/william/Projetos/powerfesta/client/application/lista_solic.html",
+		"/home/william/Projetos/powerfesta/client/application/lista_solic_url.html",
+		"/home/william/Projetos/powerfesta/settings.json",
+		"/home/william/Projetos/powerfesta/client/application/footer.js",
+		"/home/william/Projetos/powerfesta/client/application/footer.html",
+		"/home/william/Projetos/powerfesta/client/application/lista_solic_cliente.js",
+		"/home/william/Projetos/powerfesta/client/application/solic_cadastrada.html",
+		"/home/william/Projetos/ef/settings.json",
+		"/home/william/Projetos/powerfesta/client/application/ver_orcamento.html",
+		"/home/william/Projetos/powerfesta/client/application/lista_solic_url.js",
+		"/home/william/Projetos/powerfesta/client/application/ver_solic_deslogado.js",
+		"/home/william/Projetos/powerfesta/client/application/lista_orcamentos_cliente.js",
+		"/home/william/Projetos/powerfesta/client/application/ver_solic_deslogado.html",
+		"/home/william/Projetos/powerfesta/client/application/solic_cadastrada.js",
+		"/home/william/Projetos/powerfesta/client/application/ver_detalhes_solic.html",
+		"/home/william/Projetos/powerfesta/client/application/lista_solic_cliente.html",
+		"/home/william/Projetos/powerfesta/client/application/usuario_cadastrado.html",
+		"/home/william/Projetos/powerfesta/server/fixture.js",
+		"/home/william/Projetos/nutri/server/fixture.js",
+		"/home/william/Projetos/nutri/client/templates/application/home.html",
+		"/C/Projetos/nutri/server/publications.js",
+		"/C/Projetos/nutri/lib/router.js",
+		"/C/Projetos/nutri/client/templates/application/criaDieta.js",
+		"/C/Projetos/nutri/server/fixture.js",
+		"/C/Projetos/monitor/client/application/ver_solic.js",
+		"/C/Projetos/nutri/client/templates/application/nutricionistas.js",
+		"/C/Projetos/nutri/client/templates/application/pacientes.html",
+		"/C/Projetos/monitor/client/application/orcamento.js",
+		"/C/Projetos/nutri/lib/collections/users.js",
+		"/C/Projetos/monitor/client/application/lista_orcamentos_cliente.html.old.html",
+		"/C/Projetos/monitor/client/application/lista_orcamentos_cliente.js",
+		"/C/Projetos/nutri/.meteor/packages",
+		"/C/Projetos/monitor/client/application/lista_orcamentos_cliente.html"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"					{{#",
+			"SolicitacaoItem",
+			"solicitacoes",
+			"button",
+			"Des",
+			"this",
+			"ver_orcamento",
+			"<input",
+			"<label for",
+			"<input",
+			"<label for=",
+			"teal-text",
+			"solicSer",
+			"orcamentosDaSolic",
+			"arr_fornecedor_tipos",
+			"solicServicosRecebidos.insert",
+			"criaFornecedor",
+			"console.log(\"Resultado ao cadastrar \"+arr_fornecedor_tipos[i]+\" \"JSON.stringify(result));									",
+			"servicos_procurados",
+			"cad_solic",
+			"class",
+			"local_procurado_bairros",
+			"formatTime",
+			"}}   ",
+			"SolicServico.",
+			"this.tipo",
+			"undefined",
+			"ga",
+			"cad_solic",
+			"Template.solic",
+			"<label for=\"local_procurado_bairros",
+			"margin-bottom:0px",
+			"botton",
+			" <label for=\"servico_procurado_observacoes_outros_servicos\">Observações sobre os outros serviços</label>",
+			"<textarea",
+			"	",
+			"[]",
+			"local_procurado_bairros[]",
+			"#",
+			"<br>",
+			"\" >",
+			"id=\"local_procurado_bairros\"",
+			"<input type=\"checkbox\"",
+			"    $('.button-collapse').sideNav();\n    $('.parallax').parallax();",
+			"background",
+			"  ",
+			"\\n",
+			"},\n",
+			"name=\"local_procurado_bairros\"",
+			"</br>",
+			"</option>",
+			"<option value=\"",
+			"item-input-wrapper",
+			"<i class=\"radio-icon ion-checkmark\"></i>",
+			"item-radio",
+			"\n		",
+			"Grátis",
+			"WM ",
+			"Banner Kickante",
+			"crop",
+			"preg",
+			"image",
+			"crop",
+			"preg_r",
+			"WM",
+			"e",
+			"message",
+			"getFacebookTokens_will",
+			";",
+			"carta[]= ",
+			"yelow",
+			"blue",
+			"red",
+			"<a",
+			"h4",
+			"heigh",
+			"myModalL",
+			");}\n",
+			"animation",
+			"widget-1 first footer_widget span3",
+			"\"widget-1 first footer_widget span3",
+			"span12",
+			"author-content",
+			"com",
+			"author-content",
+			"Start",
+			"video",
+			"You are not allowed to access this part of the site",
+			"campaign_bio",
+			"postBio",
+			"update-post_",
+			"editpost",
+			"postBio",
+			"add_query_arg",
+			"show",
+			"datepi",
+			"date",
+			"scrip",
+			"datepicker",
+			"postDate",
+			"h1",
+			"h2",
+			"<textarea rows",
+			"590",
+			"permi",
+			"publishFa",
+			"v2",
+			"getUrl",
+			"graph",
+			"2000",
+			"1000",
+			"taggable_friends",
+			"tempdata",
+			"  $meta = strip_tags( $post->post_content );\n        $meta = strip_shortcodes( $post->post_content );\n        $meta = str_replace( array(\"\\n\", \"\\r\", \"\\t\"), ' ', $meta );\n        $meta = substr( $meta, 0, 125 );\n        $keywords = get_the_category( $post->ID );\n        $metakeywords = '';\n        foreach ( $keywords as $keyword ) {\n            $metakeywords .= $keyword->cat_name . \", \";\n        }\n        echo '<meta name=\"description\" content=\"' . $meta . '\" />' . \"\\n\";\n        echo '<meta name=\"keywords\" content=\"' . $metakeywords . '\" />' . \"\\n\";",
+			"wp_head",
+			"get_header",
+			"post",
+			"get_metadata",
+			"get_post_meta",
+			"TumblrClickButton",
+			"publishFacebook",
+			"publishAll",
+			"token",
+			"URL is not valid!",
+			"generate_response",
+			"get_upload_path",
+			"save_post",
+			"wp_insert_attachment"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"<input class=\"teal lighten-5 teal-text\" ",
+			"<label class=\"teal-text\" for",
+			"<input class=\"teal lighten-5 teal-text\" ",
+			"<label class=\"teal-text\" for=",
+			"SolicServicosRecebidos.insert",
+			"servicos_fornecidos",
+			"cad_usuario",
+			"servicos_procurados_local_bairros",
+			"SolicServicos.",
+			"tipo",
+			"\"TUDO\"",
+			"solic",
+			"Template.cad_solic",
+			"<label class=\".right-align\" for=\"local_procurado_bairros",
+			"margin-bottom:5px",
+			"bottom",
+			"<textarea class=\"materialize-textarea\"",
+			"",
+			"[#]",
+			"local_procurado_bairros[#]",
+			"</label>",
+			"\" ><label for=\"#\">",
+			"id=\"local_procurado_bairros[]\"",
+			"<input type=\"checkbox\" class=\"filled-in\"",
+			"",
+			"\\n",
+			"\n  ",
+			"name=\"local_procurado_bairros\" id=\"local_procurado_bairros\" ",
+			"<br>",
+			"</br>",
+			"<input type=\"checkbox\" name=\"local_procurado_bairros\" value=\"",
+			"",
+			"item-input-wrap",
+			"",
+			"item-text-wrap",
+			"Banner-Kickante",
+			",",
+			"",
+			"gold",
+			"green",
+			"yelow",
+			"blue",
+			"echo",
+			"dev.influentes.net",
+			"",
+			"Impulso",
+			"DuasMentes",
+			"Desafio"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "orceja.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 390.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

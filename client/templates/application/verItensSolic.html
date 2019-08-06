@@ -1,0 +1,24 @@
+<template name="verItensSolic">
+	{{#contentFor "headerTitle"}}
+		<h1 class="title"  style="text-align:center;">Itens</h1>		
+	{{/contentFor}}
+   {{#contentFor "headerButtonRight"}}
+   		<a href="/" class="button button-clear icon ion-navicon"></a> 
+  	{{/contentFor}}
+	{{#contentFor "headerButtonLeft"}}
+	    {{>ionNavBackButton }}
+  {{/contentFor}} 
+        
+ 
+	{{#ionView}}
+		{{#ionContent}}  
+			{{#ionList}}			
+			{{#each lista}}
+				{{#ionItem class=" item-icon-left"}}
+				<i class="icon ion-arrow-right-b" ></i>{{quantidade}} {{unidade}} {{alimento}}
+				{{/ionItem}}
+			{{/each}}
+			{{/ionList}}
+  		{{/ionContent}}
+	{{/ionView}}
+</template>

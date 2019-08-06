@@ -1,0 +1,35 @@
+<template name="verOrcamentos">
+	{{#contentFor "headerTitle"}}
+		<h1 class="title"  style="text-align:center;">Orçamentos Recebidos</h1>		
+	{{/contentFor}}
+   {{#contentFor "headerButtonRight"}}
+   		<a href="/" class="button button-clear icon ion-navicon"></a> 
+  	{{/contentFor}}
+	{{#contentFor "headerButtonLeft"}}
+	    {{>ionNavBackButton }}
+  {{/contentFor}} 
+        
+ 
+	{{#ionView}}
+		{{#ionContent}}  
+			{{#ionList}}
+			<div class="row">
+			  <div class="col col-50"><b>Fornecedor</b></div>
+			  <div class="col" ><b>Valor</b></div>
+			  <div class="col" ><b>Ver</b></div>
+			</div>
+
+			{{#each lista}}
+				
+			<div class="row">
+			  <div class="col col-50">{{ fornecedor.profile.name}}</div>
+			  <div class="col" ><b>{{ formatMoney total }}</b></div>
+			  <div class="col" ><a href="/verOrcamento/{{_id}}" class="button button-small  button-positive" >Detalhes</a></div>
+			</div>
+
+				
+			{{/each}}
+			{{/ionList}}
+  		{{/ionContent}}
+	{{/ionView}}
+</template>

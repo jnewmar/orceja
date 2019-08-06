@@ -1,0 +1,49 @@
+<template name="criarFornecedor">
+	{{#contentFor "headerTitle"}}
+		<h1 class="title" style="text-align:center;">Cadastrar Fornecedor</h1>
+	{{/contentFor}}
+    {{#contentFor "headerButtonLeft"}}
+		{{>ionNavBackButton }}
+	  {{/contentFor}}
+
+	{{#ionView}}
+		{{#ionContent}}
+
+
+	<form id="formCadastrar">
+	{{#ionList}}
+		<label class="item item-input">
+			<span class="input-label">Nome</span>
+			<input type="text" id="nome">
+		  </label>
+		 <label class="item item-input">
+			<span class="input-label">Email</span>
+			<input type="email" id="email">
+		  </label>
+		 <label class="item item-input">
+			<span class="input-label">Telefone</span>
+			<input type="text" id="telefone">
+		  </label>		  
+		  <label class="item item-input">
+			<span class="input-label">Senha</span>
+			<input type="password" id="senha">
+		  </label>
+		  <label class="item item-input">
+			<span class="input-label">ConfirmarSenha</span>
+			<input type="password" id="senha1">
+		  </label>		  	 
+		  <label class="item item-input">
+			<span class="input-label">Endereço</span>
+			<input type="text" id="endereco">
+		  </label>	
+
+		   		  
+		{{#ionItem}}
+		<button type="submit" class="button button-block button-positive" id="buttonCadastrar">Cadastrar</button>	
+		{{/ionItem}}
+	{{/ionList}}
+	</form>	
+
+  		{{/ionContent}}
+	{{/ionView}}
+</template>

@@ -1,0 +1,71 @@
+<template name="fazerOrcamento">
+	{{#contentFor "headerTitle"}}
+		<h1 class="title" style="text-align:center;">Fazer Orçamento</h1>		
+	{{/contentFor}}
+   {{#contentFor "headerButtonRight"}}
+   		<a href="/" class="button button-clear icon ion-navicon"></a> 
+  	{{/contentFor}}
+	{{#contentFor "headerButtonLeft"}}
+	    {{>ionNavBackButton }}
+  {{/contentFor}} 
+        
+ 
+	{{#ionView}}
+		{{#ionContent}}  
+			{{#with solic}}
+				<div class="list card">
+				  <div class="item item-divider">
+				    Solicitação
+				  </div>
+
+				  <div class="item" style="overflow: initial;    white-space: initial;">
+				        <b>Nome Solicitante</b>:<br> {{ solicitante.profile.name}}
+				  </div>
+					<div class="item" style="overflow: initial;    white-space: initial;">
+				        <b>Email Solicitante</b>:<br> {{ solicitante.email }}
+				  </div>
+					<div class="item" style="overflow: initial;    white-space: initial;">
+				        <b>Telefone Solicitante</b>:<br>{{ solicitante.profile.telefone }}
+				  </div>				  
+					<div class="item" style="overflow: initial;    white-space: initial;">
+				        <b>Endereço Solicitante</b>:<br>{{ solicitante.profile.endereco}}
+				  </div>  
+				  <div class="item">
+				        <b>Data Solicitação </b>:{{ formatTime data_cadastro }}
+				  </div>    
+				</div>
+			{{/with }}
+			{{#ionList}}
+			{{#ionItem}}	
+			<div class="row">
+			  <div class="col col-50">Produto</div>
+			  <div class="col" >Valor<br>unitário</div>
+			  <div class="col" >Total</div>
+			</div>
+			{{/ionItem}}
+			{{#each lista}}
+
+				{{#ionItem class="item-input"}}
+				<div class="row ">
+					<input id="qtd_{{_id}}" name="qtd_{{_id}}" type="hidden" value="{{quantidade}}" >
+					<div class="col col-50">{{quantidade}} {{unidade}} {{alimento}}</div>
+					<div class="col" ><input id="unitario_{{_id}}" name="unitario_{{_id}}" class="valores" style="display: inline;	width:60px ;	height:30px;	margin-top: 0px;	  border: 1px solid  rgb(169, 169, 169);padding-right :1px;"  type="text" ></div>
+					<div class="col total" id="total_{{_id}}" name="total_{{_id}}" >R$ 0,00</div>
+				</div>				
+				{{/ionItem}}
+			{{/each}}
+			{{#ionItem}}	
+			<div class="row">
+			  <div class="col col-50"><b>Total</b></div>
+			  <div class="col" ></div>
+			  <div class="col" id="total_total" ><b>R$ 0,00</b></div>
+			</div>
+			{{/ionItem}}
+			
+			{{#ionItem}}	
+			 <button class="button button-positive button-block" id="enviar-orcamento" >Enviar Orçamento</button>
+			 {{/ionItem}}
+			 {{/ionList}}
+  		{{/ionContent}}
+	{{/ionView}}
+</template>

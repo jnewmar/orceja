@@ -1,0 +1,28 @@
+<template name="minhasSolicitacoes">
+	{{#contentFor "headerTitle"}}
+		<h1 class="title" style="text-align:center;">Minhas Solicitações</h1>		
+	{{/contentFor}}
+    {{#contentFor "headerButtonLeft"}}
+   		<a href="/" class="button button-clear icon ion-navicon"></a> 
+  	{{/contentFor}}
+	{{#contentFor "headerButtonRight"}}
+	<a href="{{pathFor 'solicitarOrcamento'}}" class="button button-clear right"  >{{> ionIcon icon="ios-plus-empty"}}</a>
+  {{/contentFor}} 
+        
+ 
+	{{#ionView}}
+		{{#ionContent}}  
+			{{#ionList}}			
+			{{#each lista}}
+				{{#ionItem class="item-button-right item-icon-left"}}
+
+				<a style="text-decoration:none" class="icon ion-information-circled" href="/verItensSolic/{{_id}}" ></a>{{ formatTime data_cadastro }}
+				{{#if tem_orcamento}}
+				<a href="/verOrcamentos/{{_id}}" class="button button-small  button-positive" >Orçamentos</a>
+				{{/if}}
+				{{/ionItem}}
+			{{/each}}
+			{{/ionList}}
+  		{{/ionContent}}
+	{{/ionView}}
+</template>

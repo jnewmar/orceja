@@ -1,0 +1,30 @@
+<template name="profile">
+	{{#contentFor "headerTitle"}}
+		<h1 class="title" style="text-align:center;"  >Profile</h1>
+	{{/contentFor}}
+    {{#contentFor "headerButtonLeft"}}
+   		<a href="/" class="button button-clear icon ion-navicon"></a> 
+  	{{/contentFor}}
+	
+	{{#ionView}}
+		{{#ionContent}}
+
+			{{#ionList}}
+				{{#ionItem}}id: {{currentUser._id}}{{/ionItem}}
+				{{#ionItem}}Nome: {{currentUser.profile.name}}{{/ionItem}}
+				{{#ionItem}}Telefone: {{currentUser.profile.telefone}}{{/ionItem}}
+				{{#ionItem}}Email: {{currentUser.emails.[0].address}}{{/ionItem}}			
+				{{#ionItem style="overflow: initial;    white-space: initial;" }}Endereço: {{currentUser.profile.endereco}}{{/ionItem}}			
+				{{#if isInRole 'admin'}}
+						{{#ionItem}}Tipo: ADMIN{{/ionItem}}
+				{{/if}}				
+				{{#if isInRole 'fornecedor'}}
+					{{#ionItem}}Tipo: FORNECEDOR{{/ionItem}}				
+				{{/if}}
+				{{#if isInRole 'comprador'}}
+					{{#ionItem}}Tipo: COMPRADOR{{/ionItem}}				
+				{{/if}}				
+			{{/ionList}}
+  		{{/ionContent}}
+	{{/ionView}}
+</template>
